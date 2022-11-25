@@ -20,6 +20,9 @@ button {
   border: none;
   border-radius: 25px;
 }
+ul li {
+    list-style: none;
+}
 div {
     display: block;
 }
@@ -143,17 +146,35 @@ div {
         height: 78px;
         background-color: #4461fc;
     }
-    .mockup_pages {
-        width: 585px;
-        height: 432px;
+    .mockup_pages_area {
+       
         margin: 0 auto;
         background-color: royalblue;
     }
-    .page_info {
-        float: left;
-    }
-   
-    
+        .mockup {
+            width: 585px;
+            height: 432px;
+            background-color: #ddd;
+            margin: 0 auto;
+        }
+        .page_info {
+            margin: 0 auto;
+            width: 795px;
+            height: 125px;
+        }
+        .page_info div {
+            float: left;
+        }
+        .page_info ul li {
+            float: left;
+        }
+            .page_info .first_color {
+                width: 40px;
+                height: 40px;
+                background-color: #8fa7fe;
+                border-radius: 50%;
+            }
+        
 #designs {
     background-color: green;
 }
