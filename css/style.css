@@ -97,6 +97,12 @@ div {
 #webdeisgns{
     background-color: royalblue;
 }
+    .webdesignslogo{
+        width: 367px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
 #designs {
     background-color: green;
 }
