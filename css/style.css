@@ -18,7 +18,7 @@ button {
   display: inline-block;
   width: auto;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 div {
     display: block;
@@ -139,6 +139,11 @@ div {
         margin: 0 auto;
         background-color: royalblue;
     }
+    .page_info {
+        float: left;
+    }
+   
+    
 #designs {
     background-color: green;
 }
