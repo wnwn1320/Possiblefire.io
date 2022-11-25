@@ -129,6 +129,10 @@ div {
         padding: 0 30px 0 30px;
         margin-left: 40px;
     }
+    .webdesigns_buttons button:hover {
+        background-color:#4461fc;
+        color:#ffffff;
+    }
     .mockup_pages {
         width: 585px;
         height: 432px;
