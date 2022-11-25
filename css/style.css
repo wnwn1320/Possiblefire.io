@@ -4,6 +4,22 @@
     padding: 0;
     margin: 0;
 }
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  border: none;
+  border-radius: 20px;
+}
 div {
     display: block;
 }
@@ -95,13 +111,29 @@ div {
             margin-top: 80px;
         }
 #webdeisgns{
-    background-color: royalblue;
 }
     .webdesignslogo{
         width: 367px;
         display: block;
         margin: 0 auto;
         padding-top: 70px;
+    }
+    .webdesigns_buttons{
+       margin: 0 auto;
+       padding:40PX 0 100px 0;
+    }
+    .webdesigns_buttons button {
+        border: 1px solid #8fa7fe;
+        color: #999999;
+        height: 45px;
+        padding: 0 30px 0 30px;
+        margin-left: 40px;
+    }
+    .mockup_pages {
+        width: 585px;
+        height: 432px;
+        margin: 0 auto;
+        background-color: royalblue;
     }
 #designs {
     background-color: green;
