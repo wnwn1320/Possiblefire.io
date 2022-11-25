@@ -133,6 +133,16 @@ div {
         background-color:#4461fc;
         color:#ffffff;
     }
+    .left_arrow {
+        width: 40px;
+        height: 78px;
+        background-color: #4461fc;
+    }
+    .right_arrow {
+        width: 40px;
+        height: 78px;
+        background-color: #4461fc;
+    }
     .mockup_pages {
         width: 585px;
         height: 432px;
