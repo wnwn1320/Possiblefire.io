@@ -114,6 +114,7 @@ div {
             margin-top: 80px;
         }
 #webdeisgns{
+    background-image: url("../img/webdesign_background.png");
 }
     .webdesignslogo{
         width: 367px;
@@ -122,8 +123,10 @@ div {
         padding-top: 70px;
     }
     .webdesigns_buttons{
-       margin: 0 auto;
-       padding:40PX 0 100px 0;
+        display: block;
+        margin: 0 auto;
+        padding: 40PX 0 100px 0;
+        width: 920px;
     }
     .webdesigns_buttons button {
         border: 1px solid #8fa7fe;
@@ -136,21 +139,25 @@ div {
         background-color:#4461fc;
         color:#ffffff;
     }
-    .left_arrow {
-        width: 40px;
-        height: 78px;
-        background-color: #4461fc;
-    }
-    .right_arrow {
-        width: 40px;
-        height: 78px;
-        background-color: #4461fc;
-    }
+    
     .mockup_pages_area {
-       
         margin: 0 auto;
-        background-color: royalblue;
+        position:relative
     }
+        .sp_arrows div {
+            width: 45px;
+            height: 82px;
+            position: absolute;
+            top:216px;
+        }
+        .previous_arrow {
+           
+            background-image: url("../img/previous.png");
+        }
+        .next_arrow {
+            background-image: url("../img/next.png");
+            right: 0;
+        }
         .mockup {
             width: 585px;
             height: 432px;
@@ -179,9 +186,9 @@ div {
     background-color: green;
 }
 #contact {
-     background-color: violet;
+     background-image: url("../img/contact_backgoround.png");
 }
-#footer {
+footer {
     background-color: ivory;
     height: 120px;
 }
