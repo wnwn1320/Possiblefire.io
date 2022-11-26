@@ -183,8 +183,39 @@ div {
             }
         
 #designs {
-    background-color: green;
 }
+#designs div {
+    float: left;
+}
+#designs .forth_design {
+    margin-right: 0;
+}
+    
+    .designslogo {
+        width: 241px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+    .designs_area {
+        margin-top: 100px;
+    }
+    .designs_area div {
+        width: 380px;
+        margin-right: 48px;
+    }
+    .thumb  {
+        width: 380px;
+        height: 340px;
+        border-radius: 10px;
+        background-color: #ddd;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .desc_title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #666666;
+    }
 #contact {
      background-image: url("../img/contact_backgoround.jpg");
 }
