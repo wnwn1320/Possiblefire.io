@@ -152,10 +152,10 @@ div {
         }
         .previous_arrow {
            
-            background-image: url("../img/previous.png");
+            background-image: url("../img/previous_arrow.jpg");
         }
         .next_arrow {
-            background-image: url("../img/next.png");
+            background-image: url("../img/next_arrow.jpg");
             right: 0;
         }
         .mockup {
