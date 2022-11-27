@@ -174,10 +174,10 @@ div {
    #wdslide4:checked ~ .wdslide_list .wdslide_item {left: -300%;}
 
    .wdslide_bt > div {display: none;}
-   #wdslide1:checked ~ .wdslide_list .bt1 {display: block;}
-   #wdslide2:checked ~ .wdslide_list .bt2 {display: block;}
-   #wdslide3:checked ~ .wdslide_list .bt3 {display: block;}
-   #wdslide4:checked ~ .wdslide_list .bt4 {display: block;}
+   #wdslide1:checked ~ .wdslide_list .bt1 {display: block !important;}
+   #wdslide2:checked ~ .wdslide_list .bt2 {display: block !important;}
+   #wdslide3:checked ~ .wdslide_list .bt3 {display: block !important;}
+   #wdslide4:checked ~ .wdslide_list .bt4 {display: block !important;}
 #designs {
 }
 #designs div {
