@@ -122,7 +122,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 300px;
+    bottom: -25px;
 
     display: block;
 
@@ -202,12 +202,11 @@
 .slick-dots li.slick-active button:before
 {
     background-color: #4461fc;
+    color: black;
 }
 .slide_button {
-    max-width: 915px;
+    min-width: 100%;
     display: block;
-    height: 45px;
-    margin: 0 auto;
 }
 .slide_button li{
     background-color: #ffffff;
@@ -219,18 +218,9 @@
     padding: 0px 30px 0px 30px;
     border-radius: 25px;
     font-size: 18px;
-    margin-right: 22px;
-}
-.slide_button li:last-child {
-    margin-right: 0px !important;
 }
 .slide_button li:focus,
 .slide_button li:hover {
     background-color: #4461fc;
     color: #ffffff;
-}
-.slide_button li.slick-active {
-    position: relative;
-    top: -581px;
-    z-index: -9999;
 }
