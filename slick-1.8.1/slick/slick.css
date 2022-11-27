@@ -87,8 +87,9 @@
     float: right;
 }
 .slick-slide img
-{
+{   max-width: 585px;
     display: block;
+    margin: 0 auto;
 }
 .slick-slide.slick-loading img
 {
