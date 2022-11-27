@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    letter-spacing: -1px;
 }
 button {
   -webkit-appearance: none;
@@ -124,16 +125,17 @@ div {
         padding-top: 70px;
     }
    .slide_box {
-    max-width: 585px;
+    max-width: 1680px;
     margin: 0 auto;
     position: relative;
    }
-   .slide_box .wd_title {}
    .slide_box .wdslide_list {
+    max-width: 585px;
     position: relative;
     white-space: nowrap;
     font-size: 0;
     overflow: hidden;
+    margin: 0 auto;
    }
    .wdslide_item {
     position: relative;
@@ -148,11 +150,12 @@ div {
     position: relative;
    }
    .wdslide_item > a img {
-    max-width: 100%;
+    max-width: 585px;
    }
    .slide_box {
     margin-top: 40px;
    }
+
 
    .slide_box .wdslide_bt [class*="bt"] > label {
     position: absolute;
@@ -163,17 +166,17 @@ div {
     cursor: pointer;
    }
    .slide_box .wdslide_bt [class*="bt"] label.prev {
-    left: -549px;
+    left: 0px;
     bottom: 150px;
     background-image: url("../img/previous.png");     
    }
    .slide_box .wdslide_bt [class*="bt"] label.next {
-    right: -459px;
+    right: 0px;
     bottom: 150px;
     background-image: url("../img/next.png");     
    } 
 
-   [name="slide"] {opacity: 0;}
+   [name="slide"] {display: none;}
    #wdslide1:checked ~ .wdslide_list .wdslide_item {left: 0;}
    #wdslide2:checked ~ .wdslide_list .wdslide_item {left: -100%;}
    #wdslide3:checked ~ .wdslide_list .wdslide_item {left: -200%;}
