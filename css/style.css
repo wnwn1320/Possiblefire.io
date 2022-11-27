@@ -159,11 +159,13 @@ div {
     cursor: pointer;
    }
    .slide_box .wdslide_bt [class*="bt"] label.prev {
-    left: 0px;
+    left: -549px;
+    bottom: 150px;
     background-image: url("../img/previous.png");     
-   }
-   .slide_box .wdslide_bt [class*="bt"] label.next {
-    right: 0px;
+}
+.slide_box .wdslide_bt [class*="bt"] label.next {
+    right: -459px;
+    bottom: 150px;
     background-image: url("../img/next.png");     
    } 
 
