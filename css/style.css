@@ -174,7 +174,7 @@ div {
    #wdslide4:checked ~ .wdslide_list .wdslide_item {left: -300%;}
 
    .wdslide_bt [class*="bt"] {}
-   #wdslide1:checked ~ .wdslide_list .bt1 {display: block;}s
+   #wdslide1:checked ~ .wdslide_list .bt1 {display: block;}
    #wdslide2:checked ~ .wdslide_list .bt2 {display: block;}
    #wdslide3:checked ~ .wdslide_list .bt3 {display: block;}
    #wdslide4:checked ~ .wdslide_list .bt4 {display: block;}
