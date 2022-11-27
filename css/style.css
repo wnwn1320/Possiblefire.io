@@ -173,7 +173,7 @@ div {
    #wdslide3:checked ~ .wdslide_list .wdslide_item {left: -200%;}
    #wdslide4:checked ~ .wdslide_list .wdslide_item {left: -300%;}
 
-   .wdslide_bt [class*="bt"] {}
+   .wdslide_bt [class*="bt"] {display: none;}
    #wdslide1:checked ~ .wdslide_list .bt1 {display: block;}
    #wdslide2:checked ~ .wdslide_list .bt2 {display: block;}
    #wdslide3:checked ~ .wdslide_list .bt3 {display: block;}
