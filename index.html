@@ -16,7 +16,7 @@
         <div class="top_wrap">
             <header class="fix">
                 <div class="header_bg">
-                    <div id="container">
+                    <div class="container">
                         <img src="./img/logo.png" alt="logo" class="logo">
                     </div>
                 </div>
@@ -27,8 +27,8 @@
                 </div>
             </div>
          </div>
-        <div id="container" >
-            <section id="about" class="content">
+        <div class="container">
+            <section class="about content">
                 <div class="profile">
                     <div class="profile_picture">
                                                 
@@ -58,21 +58,44 @@
                 </div>
             </section>
         </div>
-        <section id="webdeisgns">
-            <div id="container">
+        <section class="webdeisgns">
+            <div class="container">
                 <div class="content">
                     <img src="./img/webdesigns.png" alt="" class="webdesignslogo">
-                    <div id="wb_slide" class="single-item">
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
+                    <ul class="slide_button">
+                        <li>
+                            디자인 소재은행
+                        </li>
+                        <li>
+                            이야기 끓이는 주전자
+                        </li>
+                        <li>
+                            쇼핑몰 페이지
+                        </li>
+                        <li>
+                            산부인과 페이지
+                        </li>
+                    </ul>
+                    <div class="wb_slide single-item">
+                        <div>
+                            <img src="./img/mockup_1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./img/mockup_1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./img/mockup_1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./img/mockup_1.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div id="container">
-            <section id="designs" class="content">
-                <div id="container">
+        <div class="container">
+            <section class="designs content">
+                <div class="container">
                     <img src="./img/designs.png" alt="" class="designslogo">
                     <div class="designs_area">
                         <div class="first_design">
@@ -114,8 +137,8 @@
                 </div>
             </section>
         </div>
-        <section id="contact" class="content">
-            <div id="container">
+        <section class="contact content">
+            <div class="container">
 
             </div>
         </section>
@@ -124,7 +147,12 @@
         </footer>
     </div>
     <script>
-        $('.single-item').slick();
+        $('.single-item').slick({
+            arrows : true, 
+            dots : true,
+            dotsClass : "slide_button",
+        });
+        
     </script>
 </body>
 </html>
