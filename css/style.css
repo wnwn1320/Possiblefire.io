@@ -129,6 +129,27 @@ div {
         margin: 0 auto;
         padding-top: 100px;
     }
+    .slide_button {
+        max-width: 915px;
+        display: block;
+        height: 45px;
+        margin: 0 auto;
+    }
+    .slide_button li{
+        background-color: #ffffff;
+        border: 1px solid #b1c2ff;
+        width: auto;
+        height: 45px;
+        display: inline-block;
+        line-height: 45px;
+        padding: 0px 30px 0px 30px;
+        border-radius: 25px;
+        font-size: 18px;
+        margin-right: 22px;
+    }
+    .slide_button li:active {
+        
+    }
 .designs {
 }
 .designs div {
