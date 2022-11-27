@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 button {
   -webkit-appearance: none;
@@ -122,66 +123,61 @@ div {
         margin: 0 auto;
         padding-top: 70px;
     }
-    .webdesigns_buttons{
-        display: block;
-        margin: 0 auto;
-        padding: 40PX 0 100px 0;
-        width: 920px;
-    }
-    .webdesigns_buttons button {
-        border: 1px solid #8fa7fe;
-        color: #999999;
-        height: 45px;
-        padding: 0 30px 0 30px;
-        margin-left: 40px;
-    }
-    .webdesigns_buttons button:hover {
-        background-color:#4461fc;
-        color:#ffffff;
-    }
-    
-    .mockup_pages_area {
-        margin: 0 auto;
-        position:relative
-    }
-        .sp_arrows div {
-            width: 45px;
-            height: 82px;
-            position: absolute;
-            top:216px;
-        }
-        .previous_arrow {
-           
-            background-image: url("../img/previous.png");
-        }
-        .next_arrow {
-            background-image: url("../img/next.png");
-            right: 0;
-        }
-        .mockup {
-            width: 585px;
-            height: 432px;
-            background-color: #ddd;
-            margin: 0 auto;
-        }
-        .page_info {
-            margin: 0 auto;
-            width: 795px;
-            height: 125px;
-        }
-        .page_info div {
-            float: left;
-        }
-        .page_info ul li {
-            float: left;
-        }
-            .page_info .first_color {
-                width: 40px;
-                height: 40px;
-                background-color: #8fa7fe;
-                border-radius: 50%;
-            }
-        
+   .slide_box {
+    max-width: 585px;
+    margin: 0 auto;
+    position: relative;
+   }
+   .slide_box .wdslide_list {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+   }
+   .wdslide_item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all 0.7s;
+   }
+   .wdslide_item > a {
+    display: block;
+    width: auto;
+    position: relative;
+   }
+   .wdslide_item > a img {
+    max-width: 100%;
+   }
+
+   .slide_box .wdslide_bt [class*="bt"] label {
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 82px;
+    cursor: pointer;
+   }
+   .slide_box .wdslide_bt [class*="bt"] label.prev {
+    left: 0px;
+    background-image: url("../img/previous.png");     
+   }
+   .slide_box .wdslide_bt [class*="bt"] label.next {
+    right: 0px;
+    background-image: url("../img/next.png");     
+   } 
+
+   [name="slide"] {display: none;}
+   #wdslide1:checked ~ .wdslide_list .wdslide_item {left: 0;}
+   #wdslide2:checked ~ .wdslide_list .wdslide_item {left: -100%;}
+   #wdslide3:checked ~ .wdslide_list .wdslide_item {left: -200%;}
+   #wdslide4:checked ~ .wdslide_list .wdslide_item {left: -300%;}
+
+   .wdslide_bt [class*="bt"] {}
+   #wdslide1:checked ~ .wdslide_list .bt1 {display: block;}
+   #wdslide2:checked ~ .wdslide_list .bt2 {display: block;}
+   #wdslide3:checked ~ .wdslide_list .bt3 {display: block;}
+   #wdslide4:checked ~ .wdslide_list .bt4 {display: block;}
 #designs {
 }
 #designs div {
