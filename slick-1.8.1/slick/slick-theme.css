@@ -88,11 +88,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url(../../img/previous.png);
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: url(../../img/previous.png);
 }
 
 .slick-next
@@ -106,11 +106,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url(../../img/next.png);
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: url(../../img/);
 }
 
 /* Dots */
@@ -122,7 +122,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 300px;
 
     display: block;
 
@@ -140,10 +140,10 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: auto;
+    height: 45px;
     margin: 0 5px;
-    padding: 0;
+    padding: 0px 30px 0px 30px;
 
     cursor: pointer;
 }
@@ -154,9 +154,9 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: auto;
+    height: 45px;
+    padding: 0px 30px 0px 30px;
 
     cursor: pointer;
 
@@ -178,20 +178,22 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 45px;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 45px;
 
-    content: '•';
+    content: '';
     text-align: center;
+    border: 1px solid #b1c2ff;
+    border-radius: 25px;
+    background-color: #ffffff;
 
-    opacity: .25;
     color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -199,6 +201,36 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    background-color: #4461fc;
+}
+.slide_button {
+    max-width: 915px;
+    display: block;
+    height: 45px;
+    margin: 0 auto;
+}
+.slide_button li{
+    background-color: #ffffff;
+    border: 1px solid #b1c2ff;
+    width: auto;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-right: 22px;
+}
+.slide_button li:last-child {
+    margin-right: 0px !important;
+}
+.slide_button li:focus,
+.slide_button li:hover {
+    background-color: #4461fc;
+    color: #ffffff;
+}
+.slide_button li.slick-active {
+    position: relative;
+    top: -581px;
+    z-index: -9999;
 }
