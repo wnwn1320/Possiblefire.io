@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script src="./slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <title>Document</title>
-    <style>
-       
-    </style>
 </head>
 <body>
     <div id="wrap">
@@ -61,51 +62,10 @@
             <div id="container">
                 <div class="content">
                     <img src="./img/webdesigns.png" alt="" class="webdesignslogo">
-                    <div class="slide_box">
-                        <input type="radio" name="slide" id="wdslide1" checked>
-                        <input type="radio" name="slide" id="wdslide2">
-                        <input type="radio" name="slide" id="wdslide3">
-                        <input type="radio" name="slide" id="wdslide4">
-                        <ul class="wdslide_list">
-                            <li class="wdslide_item">
-                                <a href="">
-                                    <img src="./img/mockup_1.png" alt="">
-                                </a>
-                            </li>
-                            <li class="wdslide_item">
-                                <a href="">
-                                    <img src="./img/mockup_1.png" alt="">
-                                </a>
-                            </li>
-                            <li class="wdslide_item">
-                                <a href="">
-                                    <img src="./img/mockup_1.png" alt="">
-                                </a>
-                            </li>
-                            <li class="wdslide_item">
-                                <a href="">
-                                    <img src="./img/mockup_1.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="wdslide_bt">
-                            <div class="bt1">
-                                <label for="wdslide4" class="prev"></label>
-                                <label for="wdslide2" class="next"></label>
-                            </div>
-                            <div class="bt2">
-                                <label for="wdslide1" class="prev"></label>
-                                <label for="wdslide3" class="next"></label>
-                            </div>
-                            <div class="bt3">
-                                <label for="wdslide2" class="prev"></label>
-                                <label for="wdslide4" class="next"></label>
-                            </div>
-                            <div class="bt4">
-                                <label for="wdslide3" class="prev"></label>
-                                <label for="wdslide1" class="next"></label>
-                            </div>
-                        </div>
+                    <div id="wb_slide" class="single-item">
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
                     </div>
                 </div>
             </div>
@@ -163,5 +123,8 @@
 
         </footer>
     </div>
+    <script>
+        $('.single-item').slick();
+    </script>
 </body>
 </html>
