@@ -179,14 +179,10 @@
     background-color: #4461fc;
     border-radius: 25px;
     z-index: 100;
-}
-.slick-dots li.slick-active:focus {
-    background-color: #4461fc;
-    color: #ffffff;
+    color: #4461fc;
 }
 .slick-dots li.slick-active button:before
 {
-    background-color: transparent;
     color: #ffffff;
 }
 .slick-dots li::after {
