@@ -175,11 +175,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.slick-dots li.slick-active {
-    background-color: #4461fc;
+.single-item .slick-dots li.slick-active {
+    background-color: #4461fc !important;
     border-radius: 25px;
-    z-index: 100;
-    color: #4461fc;
+    color: #ffffff;
+    position: relative;
 }
 .slick-dots li.slick-active button:before
 {
@@ -196,6 +196,7 @@
     line-height: 45px;
     border-radius: 25px;
     background-color: #ffffff;
+    z-index: 3;
     border: 1px solid #88a1fe;
 }
 .slick-dots li:hover::after,
