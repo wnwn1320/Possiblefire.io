@@ -176,6 +176,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .single-item .slick-dots li.slick-active {
+   
+}
+.single-item .slick-dots li.slick-active:after {
     background-color: #4461fc !important;
     border-radius: 25px;
     color: #ffffff;
