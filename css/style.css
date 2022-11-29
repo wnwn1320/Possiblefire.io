@@ -5,6 +5,11 @@
     margin: 0;
     box-sizing: border-box;
     letter-spacing: -1px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 button {
   -webkit-appearance: none;
@@ -48,7 +53,38 @@ div {
     background-image: url(../img/main_background.jpg);
     background-position: 0 100%;
 }
-.logo  { width:88px;
+.fix {
+    height: 90px;
+    display: block;
+}
+.fix h1 {
+    float: left;
+}
+.logo  { 
+    width:88px;
+}
+.fix nav {
+    text-align: center;
+    height: 90px;
+}
+.fix nav ul {
+    display: inline-block;
+}
+.fix nav ul li {
+    display: inline-block;
+}
+.fix nav ul li a {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    padding: 0 32px;
+    line-height: 90px;
+    text-align: center;
+}
+.contact_adress {
+    position: relative;
+    left: 390px;
 }
 .main{
     
