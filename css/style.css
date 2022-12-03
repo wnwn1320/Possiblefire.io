@@ -245,6 +245,15 @@ div {
                 position: relative;
                 left: -58px;
               }
+              .skills .chart3 {
+                margin-right: 22px;
+              }
+              .skills .chart3 img {
+                position: relative;
+                left: -75px;
+                width: 70px;
+                height: 70px;
+              }
 .webdeisgns{
     background-image: url("../img/webdesign_background.jpg");
 }
