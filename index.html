@@ -114,21 +114,21 @@
                         <p>경력사항</p>
                         <ul>
                             <li>
-                                <h5>2022.07-2022.11<br>(재직)</h5>
+                                <h5>2022.07 ~ 2022.11<br>(재직)</h5>
                                 <span>
-                                    <strong>서문다방</strong> / 바리스타<br>(사원)
+                                    <strong style="color: #333333;">서문다방</strong> / 바리스타<br>(사원)
                                 </span>
                             </li>
                             <li>
-                                <h5>2021.11-2022.06<br>(8개월)</h5>
+                                <h5>2021.11 ~ 2022.06<br>(8개월)</h5>
                                 <span>
-                                    <strong>해피CGI</strong> / 웹 디자이너<br>(계약직)
+                                    <strong style="color: #333333;">해피CGI</strong> / 웹 디자이너<br>(계약직)
                                 </span>
                             </li>
                             <li>
-                                <h5>2021.09-2021.11<br>(2개월)</h5>
+                                <h5>2021.09 ~ 2021.11<br>(2개월)</h5>
                                 <span>
-                                    <strong>㈜데일리데코</strong> / 쇼핑몰 디자인(배너,상세페이지) <br>(사원)
+                                    <strong style="color: #333333;">㈜데일리데코</strong> / 쇼핑몰 디자인(배너,상세페이지) <br>(사원)
                                 </span>
                             </li>
                         </ul>
@@ -165,7 +165,7 @@
                         </ul>
                     </div>
                     <div class="skills detail_text">
-                        <p></p>
+                        <p>SKILLS</p>
                         <ul>
                             <li>
                                 <div class="chart-pie chart1">
@@ -276,9 +276,39 @@
         </footer>
     </div>
     <script>
-        $('.chart-pie').circleProgress({
+        $('.chart1').circleProgress({
+          value: 0.80,
+          fill: {gradient: [['#e5462f', .5], ['#e5462f', .5]], gradientAngle: Math.PI / 4}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+        });
+        $('.chart2').circleProgress({
+          value: 0.7,
+          fill: {gradient: [['#2d69f1', .5], ['#2d69f1', .5]], gradientAngle: Math.PI / 4}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+        });
+        $('.chart3').circleProgress({
+          value: 0.70,
+          fill: {gradient: [['#1094cc', .5], ['#1094cc', .5]], gradientAngle: Math.PI / 4}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+        });
+        $('.chart4').circleProgress({
+          value: 0.80,
+          fill: {gradient: [['#faa403', .5], ['#faa403', .5]], gradientAngle: Math.PI / 4}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+        });
+        $('.chart5').circleProgress({
+          value: 0.6,
+          fill: {gradient: [['#9c9cff', .5], ['#9c9cff', .5]], gradientAngle: Math.PI / 4}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+        });
+        $('.chart6').circleProgress({
           value: 0.75,
-          fill: {gradient: [['#0681c4', .5], ['#4ac5f8', .5]], gradientAngle: Math.PI / 4}
+          fill: {gradient: [['#9c9cff', .5], ['#9c9cff', .5]], gradientAngle: Math.PI / 4}
         }).on('circle-animation-progress', function(event, progress, stepValue) {
         $(this).find('strong').text(stepValue.toFixed(2).substr(1));
         });
