@@ -56,12 +56,19 @@ div {
    margin: 0 auto;
 }
 .top_wrap {
+    height: 1080px;
     background-image: url(../img/main_background.jpg);
-    background-position: 0 100%;
+    background-position: 0;
+    display: inline-block;
+    width: 100%;
 }
 .fix {
+    position: fixed;
     height: 90px;
     display: block;
+    top: 0;
+    width: 100%;
+    left: 0px;
 }
 .fix h1 {
     float: left;
@@ -96,7 +103,7 @@ div {
     
 }
 #main .main_mention {
-    margin-top: 300px;
+    padding-top: 300px;
 }
 #main img {
     display: block;
@@ -110,7 +117,7 @@ div {
     color: #333333;
 }
 .about {
-    margin-top: 170px;
+    padding-top: 140px;
 }
 .about div {
     display: inline-block;
