@@ -171,7 +171,7 @@ div {
             -webkit-box-orient: vertical;
         }
         .profile_details {
-            margin-top: 103px;
+            margin-top: 80px;
         }
         .profile_details li {
             width: 100%;
@@ -197,11 +197,11 @@ div {
         }
         .activity {
             width: 100%;
-            margin-top: 100px;
+            margin-top: 80px;
         }
         .resume {
             width: 100%;
-            margin-top:100px;
+            margin-top: 80px;
         }
     .ability {
         width: 410px;
@@ -212,7 +212,7 @@ div {
             
         }
         .lisence li {
-            margin: 0px 40px 40px 0px;
+            margin: 0px 25px 25px 0px;
 
         }
         .lisence ul li:nth-child(3),.lisence ul li:nth-child(4) {
@@ -317,7 +317,7 @@ div {
     background-image: url("../img/webdesign_background.jpg");
 }
     .webdesignslogo{
-        width: 367px;
+        width: 20%;
         display: block;
         margin: 0 auto;
         padding: 70px 0px 40px 0px;
