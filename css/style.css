@@ -327,6 +327,49 @@ div {
         margin: 0 auto;
         padding-top: 100px;
     }
+    .wb_slide .wb_desc {
+        max-width: 795px;
+        margin: 0 auto;
+    }
+    .wb_desc {
+        padding-top: 40px;
+    }
+    .wb_desc .infodesc {
+        margin-right: 200px;
+    }
+    .wb_desc li {
+        float: left;
+        margin-right:40px;
+    }
+    .wb_desc li:last-child {
+        margin-right: 0;
+    }
+    .wb_desc li div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #4461fc;
+        margin: 0 auto;
+
+    }
+    .wb_desc li p {
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+    .wb_desc .colordesc li:first-child div{
+        background: #488DCB;
+    }
+    .wb_desc .colordesc li:nth-child(2) div {
+        background-color: #EAA848;
+    }
+    .wb_desc .colordesc li:nth-child(3) div {
+        background-color: #DA573C;
+    }
+    .wb_desc .colordesc li span,.colordesc2 li span {
+        color: #999999;
+        padding-top: 15px;
+        display: inline-block;
+    }
     .slide_button {
         max-width: 915px;
         display: block;
