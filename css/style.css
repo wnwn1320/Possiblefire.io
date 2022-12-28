@@ -526,39 +526,67 @@ div {
         padding-top: 25px;
         display: inline-block;
     }
-    .modal_page {
-        position: absolute;
-        top: 0;
-        left: 0;
-                
-        width: 100%;
+    .popup-wrap{
         height: 100%;
-
+        background-color: rgba(0, 0, 0, 0.3);
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         display: none;
+        padding: 15px;
+        z-index: 999999;
+      }
+      .popup-head{
+        width:100%;
+        height:50px;  
+        display:flex; 
+        align-items:center;
+        justify-content:center;
+      }
+      .popup-body{              
+        width:100%;
+        background-color:#ffffff;
+      }
+      .body-content{              
+        width:100%;
+        padding:30px;             
+      }
+      .body-titlebox{            
+        text-align:center;      
+        width:100%;
+        height:40px;
+        margin-bottom:10px;       
+      }
+      .body-contentbox{           
+        word-break: break-word;
+        overflow-y: auto;
+        max-height: 700px;
+        max-width: 1000px; 
+        overflow: scroll;  
+        overflow-x: hidden; 
+      }
+      .popup-foot{                    
+        width:100%;
+        height:50px;
+      }
+      .pop-btn{
+        display:inline-flex;           
+        width:50%;                      
+        height:100%;                    
+        justify-content:center;        
+        align-items:center;            
+        color:#ffffff;                 
+        cursor:pointer;                 
+      }
+      .pop-btn img {
+        width: 28px;
+        position: relative;
+        top: -210px;
+        right: -780px;
 
-        background-color: rgba(0, 0, 0, 0.4);
-      }
-      .modal.show {
-        display: block;
-      }
-      
-      .modal_page {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-      
-        width: 400px;
-        height: 600px;
-      
-        padding: 40px;
-      
-        text-align: center;
-      
-        background-color: rgb(255, 255, 255);
-        border-radius: 10px;
-        box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
-      
-        transform: translateX(-50%) translateY(-50%);
       }
 .contact {
      background-image: url("../img/contact_backgoround.jpg");
