@@ -538,10 +538,13 @@ div {
         display: none;
         padding: 15px;
         z-index: 999999;
-      }
-      .popup-body{              
-        width:100%;
-        background-color:#ffffff;
+    }
+    .popup-body{              
+        overflow: scroll;
+        width: 100%;
+        overflow-x: hidden;
+        max-height: 750px;
+        background-color: #ffffff;
       }
       .body-content{              
         width:100%;
@@ -552,13 +555,14 @@ div {
         height:450px;
         background-image: url(../img/modalbackground1.jpg);
       }
+      .body-titlebox > img {
+       margin-top: 160px;
+      }
       .body-contentbox{           
         word-break: break-word;
         overflow-y: auto;
         max-height: 700px;
         max-width: 1000px; 
-        overflow: scroll;  
-        overflow-x: hidden; 
       }
       .popup-foot{                    
         width:100%;
@@ -576,8 +580,9 @@ div {
       .pop-btn img {
         width: 28px;
         position: relative;
-        top: -510px;
-        right: -783px;
+        top: -550px;
+        right: -780px;
+        filter: grayscale(1);
 
       }
 .contact {
