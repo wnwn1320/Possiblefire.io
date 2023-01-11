@@ -1,5 +1,6 @@
 @charset "utf-8";
-@media ( max-width: 480px;);
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,14 +8,19 @@
     letter-spacing: -1px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
 a {
     text-decoration: none;
     color: inherit;
 }
 .fa,.fab,.fad,.fal,.far,.fas{
-    font-weight: 900 !important;
-}
+	font-weight: 900 !important;
+	}
 
 button {
     -webkit-appearance: none;
@@ -44,13 +50,14 @@ div {
     overflow: hidden;
 }
 .container {
-    max-width: 1680px;
+    width: 1680px;
     margin: 0 auto;
 }
 .content {
     height: 1080px;
 }
 .header_bg {
+    height: 90px;
    background-color: rgba(242, 242, 242, 0.5);
    
    margin: 0 auto;
@@ -69,36 +76,63 @@ div {
     top: 0;
     width: 100%;
     left: 0px;
+    z-index: 999999;
+}
+.logo {
+    max-width: 88px;
+}
+.fix nav {
+    overflow: hidden;
+    max-width: 70%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.fix nav ul li a {
+display: flex;
+font-size: 18px;
+font-weight: 500;
+color: #333333;
+margin-right: 50px;
+line-height: 90px;
+text-align: center;
+
+}
+.fix details {
+    display: none;
+}
+
+.fix .container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .fix h1 {
     float: left;
 }
-.logo  { 
-    width:88px;
+
+.fix h1 a {
+    display: flex;
+    max-width: 100%;
+    height: 90px;
+    align-items: center;
 }
 .fix nav {
-    text-align: center;
-    height: 90px;
-}
-.fix nav ul {
-    display: inline-block;
+       text-align: center;
+       height: 90px;
+       margin: 0 auto;
+    
 }
 .fix nav ul li {
-    display: inline-block;
+    float: left;
+    line-height: 90px;
+    align-items: center;
 }
 .fix nav ul li a {
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    color: #333333;
-    padding: 0 32px;
-    line-height: 90px;
-    text-align: center;
+    height: 90px;
 }
-.contact_adress {
-    position: relative;
-    left: 390px;
-}
+
 #main{
     
 }
@@ -107,7 +141,9 @@ div {
 }
 #main img {
     display: block;
+    max-width: 100%;
     margin-bottom: 70px;
+    height: auto;
 }
 #main h4{
     font-size: 20px;
@@ -253,7 +289,6 @@ div {
                 line-height: 80px;
                 display:flex;
                 border-radius: 50%;
-                background-color: #ffffff;
               }
               .skills .chart-pie canvas {
                 width: 80px !important;
@@ -314,10 +349,11 @@ div {
     background-image: url("../img/webdesign_background.jpg");
 }
     .webdesignslogo{
-        width: 20%;
+        max-width: 20%;
         display: block;
         margin: 0 auto;
         padding: 70px 0px 40px 0px;
+        height: auto;
     }
     .wb_slide {
         max-width: 1620px;
@@ -547,23 +583,70 @@ div {
         background-color: #ffffff;
       }
       .body-content{              
-        width:100%;
+        width:1000px;
       }
       .body-titlebox{            
         text-align:center;      
         width:100%;
         height:450px;
+    }
+    .body-titlebox1 {
         background-image: url(../img/modalbackground1.jpg);
+      }
+    .body-titlebox2 {
+        background-image: url(../img/modalbackground2.jpg);
+      }
+    .body-titlebox3 {
+        background-image: url(../img/modalbackground3.jpg);
+      }
+    .body-titlebox4 {
+        background-image: url(../img/modalbackground4.jpg);
+      }
+    .body-titlebox5 {
+        background-image: url(../img/modalbackground5.jpg);
       }
       .body-titlebox > img {
        margin-top: 160px;
       }
       .body-contentbox{           
         word-break: break-word;
-        overflow-y: auto;
         max-height: 700px;
-        max-width: 1000px; 
+        max-width: 1000px;
+        width: 1000px   ; 
       }
+      .body-contentbox p {
+        font-size: 20px;
+        height: 40px;
+      }
+      .body-contentbox p {
+        border-bottom: 3px solid #333333;
+        width: 30%;
+        margin-bottom: 10px;
+
+      }
+      .body-contentbox ul {
+        margin: 30px 0px 30px 0px;
+        display: block;
+        height: 130px;
+        padding-left: 80px;
+      }
+      .body-contentbox ul li{
+        float: left;
+        width: 33.33333%;
+      
+    }
+    .content_img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content_img img {
+        width: 840px;
+    }
+    .content_img video {
+        width: 840px;
+        margin-bottom: 30px;
+    }
       .popup-foot{                    
         width:100%;
         height:50px;
@@ -579,16 +662,42 @@ div {
       }
       .pop-btn img {
         width: 28px;
-        position: relative;
-        top: -550px;
-        right: -780px;
+        position: absolute;
+        top: 50px;
+        right: 400px;
         filter: grayscale(1);
 
       }
 .contact {
      background-image: url("../img/contact_backgoround.jpg");
 }
+.contact img {
+    padding-top:120px;
+    margin: 0 auto;
+    display: block;
+    padding-left: 130px;
+}
+.contact_txt {
+    position: relative;
+    bottom: 230px;
+}
+.contact_txt a:first-child span {
+    margin-bottom: 60px;
+}
+.contact span {
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    font-size: 22px;
+}
+.contact a {
+}
 footer {
-    background-color: ivory;
-    height: 120px;
+    background-color: #d2daeb;
+    height:90px;
+    text-align: center;
+}
+footer span {
+    line-height: 90px;
+    font-size: 18px;
 }
