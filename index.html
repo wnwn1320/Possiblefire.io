@@ -329,7 +329,12 @@
                             </ul>
                         </div>
                         <div>
-                            <img src="./img/mockup_4.png" alt="">
+                            <div class="slide_buttonwrap">
+                                <button class="slidelink" id="slide_open4">
+                                    <span>View Page</span>
+                                </button>
+                                <img src="./img/mockup_4.png" alt="">
+                            </div>
                             <ul class="wb_desc">
                                 <li class="infodesc">
                                     <p>Info</p>
@@ -396,6 +401,52 @@
                 </div>
                 <div class="popup-foot">
                     <span class="pop-btn close" id="slide_close2">
+                        <img src="./img/delete.png" alt="">
+                      </span>
+                  </div>
+                </div>
+            </div>
+            <div class="slide_popup_wrap" id="slide_popup3"> 
+                <div class="popup">
+                    <div class="popup-body">
+                        <div class="body-content">
+                        <div class="content_img">
+                            <h5>PC</h5>
+                            <a href="http://shoppingj.cgimall.co.kr/" target="_blank">
+                                <img src="./img/PC_메인_쇼핑몰J.jpg" alt="">
+                            </a>
+                            <h5>모바일</h5>
+                            <a href="http://shoppingj.cgimall.co.kr/?mobile-=on" target="_blank">
+                                <img src="./img/모바일_메인_쇼핑몰J.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <span class="pop-btn close" id="slide_close3">
+                        <img src="./img/delete.png" alt="">
+                      </span>
+                  </div>
+                </div>
+            </div>
+            <div class="slide_popup_wrap" id="slide_popup4"> 
+                <div class="popup">
+                    <div class="popup-body">
+                        <div class="body-content">
+                        <div class="content_img">
+                            <h5>PC</h5>
+                            <a href="http://hospitalf.cgimall.co.kr/" target="_blank">
+                                <img src="./img/PC_메인_산부인과.jpg" alt="">
+                            </a>
+                            <h5>모바일</h5>
+                            <a href="http://hospitalf.cgimall.co.kr/?mobile-=on" target="_blank">
+                                <img src="./img/모바일_메인_산부인과.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <span class="pop-btn close" id="slide_close4">
                         <img src="./img/delete.png" alt="">
                       </span>
                   </div>
@@ -784,6 +835,21 @@
         });
         function modalClose(){
             $("#slide_popup3").fadeOut();
+        }
+        });
+        // 모달4
+        $(function(){
+        $("#confirm").click(function(){
+            modalClose(); 
+        });
+        $("#slide_open4").click(function(){        
+            $("#slide_popup4").css('display','flex').hide().fadeIn();
+        }); 
+        $("#slide_close4").click(function(){
+            modalClose();
+        });
+        function modalClose(){
+            $("#slide_popup4").fadeOut();
         }
         });
     </script>
