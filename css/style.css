@@ -345,7 +345,7 @@ text-align: center;
                 width: 70px;
                 height: 70px;
               }
-.webdeisgns{
+#webdesigns{
     background-image: url("../img/webdesign_background.jpg");
 }
     .webdesignslogo{
@@ -668,10 +668,10 @@ text-align: center;
         filter: grayscale(1);
 
       }
-.contact {
+#contact {
      background-image: url("../img/contact_backgoround.jpg");
 }
-.contact img {
+#contact img {
     padding-top:120px;
     margin: 0 auto;
     display: block;
@@ -684,13 +684,11 @@ text-align: center;
 .contact_txt a:first-child span {
     margin-bottom: 60px;
 }
-.contact span {
+#contact span {
     text-align: center;
     display: block;
     color: #ffffff;
     font-size: 22px;
-}
-.contact a {
 }
 footer {
     background-color: #d2daeb;
