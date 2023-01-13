@@ -224,7 +224,12 @@
                     <img src="./img/webdesigns.png" alt="" class="webdesignslogo">
                     <div class="wb_slide single-item">
                         <div>
-                            <img src="./img/mockup_1.png" alt="">
+                            <div class="slide_buttonwrap">
+                                <button class="slidelink" id="slide_open1">
+                                    <span>View Page</span>
+                                </button>
+                                <img src="./img/mockup_1.png" alt="">
+                            </div>
                             <ul class="wb_desc">
                                 <li class="infodesc">
                                     <p>Info</p>
@@ -254,7 +259,12 @@
                             </ul>
                         </div>
                         <div>
-                            <img src="./img/mockup_2.png" alt="">
+                            <div class="slide_buttonwrap">
+                                <button class="slidelink" id="slide_open2">
+                                    <span>View Page</span>
+                                </button>
+                                <img src="./img/mockup_2.png" alt="">
+                            </div>
                             <ul class="wb_desc">
                                 <li class="infodesc">
                                     <p>Info</p>
@@ -284,7 +294,12 @@
                             </ul>
                         </div>
                         <div>
-                            <img src="./img/mockup_3.png" alt="">
+                            <div class="slide_buttonwrap">
+                                <button class="slidelink" id="slide_open3">
+                                    <span>View Page</span>
+                                </button>
+                                <img src="./img/mockup_3.png" alt="">
+                            </div>
                             <ul class="wb_desc">
                                 <li class="infodesc">
                                     <p>Info</p>
@@ -344,6 +359,46 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="slide_popup_wrap" id="slide_popup1"> 
+                <div class="popup">
+                    <div class="popup-body">
+                        <div class="body-content">
+                        <div class="content_img">
+                            <h5>PC</h5>
+                            <img src="./img/PC_메인_이야기.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <span class="pop-btn close" id="slide_close1">
+                        <img src="./img/delete.png" alt="">
+                      </span>
+                </div>
+            </div>
+            </div>
+            <div class="slide_popup_wrap" id="slide_popup2"> 
+                <div class="popup">
+                    <div class="popup-body">
+                        <div class="body-content">
+                        <div class="content_img">
+                            <h5>PC</h5>
+                            <a href="http://designmb.cgimall.co.kr/" target="_blank">
+                                <img src="./img/PC_메인_디자인은행.png" alt="">
+                            </a>
+                            <h5>모바일</h5>
+                            <a href="http://designmb.cgimall.co.kr/?mobile-=on" target="_blank">
+                                <img src="./img/모바일_메인_디자인은행.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-foot">
+                    <span class="pop-btn close" id="slide_close2">
+                        <img src="./img/delete.png" alt="">
+                      </span>
+                  </div>
                 </div>
             </div>
         </section>
@@ -685,6 +740,54 @@
         });
     </script>
     <script>
+        // 웹디자인 슬라이드 모달
+        // 모달1
+          $(function(){
+        $("#confirm").click(function(){
+            modalClose(); 
+        });
+        $("#slide_open1").click(function(){        
+            $("#slide_popup1").css('display','flex').hide().fadeIn();
+        }); 
+        $("#slide_close1").click(function(){
+            modalClose();
+        });
+        function modalClose(){
+            $("#slide_popup1").fadeOut();
+        }
+        });
+        // 모달2
+          $(function(){
+        $("#confirm").click(function(){
+            modalClose(); 
+        });
+        $("#slide_open2").click(function(){        
+            $("#slide_popup2").css('display','flex').hide().fadeIn();
+        }); 
+        $("#slide_close2").click(function(){
+            modalClose();
+        });
+        function modalClose(){
+            $("#slide_popup2").fadeOut();
+        }
+        });
+        // 모달3
+        $(function(){
+        $("#confirm").click(function(){
+            modalClose(); 
+        });
+        $("#slide_open3").click(function(){        
+            $("#slide_popup3").css('display','flex').hide().fadeIn();
+        }); 
+        $("#slide_close3").click(function(){
+            modalClose();
+        });
+        function modalClose(){
+            $("#slide_popup3").fadeOut();
+        }
+        });
+    </script>
+    <script>
         // 1번모달
         $(function(){
         $("#confirm").click(function(){
@@ -758,36 +861,6 @@
         });
         function modalClose(){
             $("#popup5").fadeOut();
-        }
-        });
-        // 6번모달
-        $(function(){
-        $("#confirm").click(function(){
-            modalClose(); 
-        });
-        $("#modal_open6").click(function(){        
-            $("#popup6").css('display','flex').hide().fadeIn();
-        });
-        $("#close6").click(function(){
-            modalClose();
-        });
-        function modalClose(){
-            $("#popup6").fadeOut();
-        }
-        });
-        // 7번모달
-        $(function(){
-        $("#confirm").click(function(){
-            modalClose(); 
-        });
-        $("#modal_open7").click(function(){        
-            $("#popup7").css('display','flex').hide().fadeIn();
-        });
-        $("#close7").click(function(){
-            modalClose();
-        });
-        function modalClose(){
-            $("#popup7").fadeOut();
         }
         });
     </script>
